@@ -1,14 +1,11 @@
-import initConnection from './live-connection.js';
-import { pushAndReadComment, initCommentHandler } from './comment-handler.js';
-import PromptSync from 'prompt-sync';
+const initConnection = require('./live-connection');
+const { pushAndReadComment } = require('./comment-handler.js');
+const PromptSync = require('prompt-sync');
 
 const prompt = PromptSync();
 
 async function main() {
     const username = prompt({ ask: 'Tiktok Username: ' });
-    const sessionId = prompt({ ask: 'Tiktok Session Id: ' });
-
-    initCommentHandler(sessionId);
 
     const connection = await initConnection(username);
 

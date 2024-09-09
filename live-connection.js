@@ -1,4 +1,4 @@
-import { WebcastPushConnection } from 'tiktok-live-connector';
+const { WebcastPushConnection } = require('tiktok-live-connector');
 
 const initConnection = async (username) => {
     const connection = new WebcastPushConnection(username);
@@ -15,4 +15,4 @@ const initConnection = async (username) => {
     return connection;
 }
 
-export default initConnection;
+module.exports = initConnection;

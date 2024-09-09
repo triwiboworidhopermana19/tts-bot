@@ -2,7 +2,6 @@
   "name": "tts",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,11 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.7",
     "bull": "^4.16.0",
     "prompt-sync": "^4.2.0",
     "sound-play": "^1.1.0",
-    "tiktok-live-connector": "^1.1.9",
-    "tiktok-tts": "^1.1.16"
+    "tiktok-live-connector": "^1.1.9"
   },
   "devDependencies": {
     "@types/play-sound": "^1.1.2"
